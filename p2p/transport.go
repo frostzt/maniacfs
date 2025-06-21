@@ -4,4 +4,6 @@ package p2p
 type Peer interface{}
 
 // Transport handles comms between nodes
-type Transport interface{}
+type Transport interface {
+	ListenAndAccept() error
+}
